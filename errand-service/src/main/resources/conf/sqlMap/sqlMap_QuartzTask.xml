@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="QuartzTask">
+    <sql id="getQuartzTasks">
+        <![CDATA[
+            SELECT * FROM `qrtz_task` WHERE active=1
+            <#if id??>
+                and id=${id}
+            </#if>
+            <#if jobName??>
+                and job_name='${jobName}'
+            </#if>
+            <#if jobGroupName??>
+                and job_group_name='${jobGroupName}'
+            </#if>
+             <#if cronExpression??>
+                and cron_expression='${cronExpression}'
+            </#if>
+             <#if interfaceName??>
+                and interface_name='${interfaceName}'
+            </#if>
+            <#if jobStatus??>
+                and job_status='${jobStatus}'
+            </#if>
+            <#if description??>
+                and description='${description}'
+            </#if>
+            <#if createUserid??>
+                and create_userid='${createUserid}'
+            </#if>
+             <#if createUsername??>
+                and create_username='${createUsername}'
+            </#if>
+             <#if createDate??>
+                and create_date='${createDate}'
+            </#if>
+            <#if updateUserid??>
+                and update_userid='${updateUserid}'
+            </#if>
+            <#if updateUsername??>
+                and update_username='${updateUsername}'
+            </#if>
+             <#if updateDate??>
+                and update_date='${updateDate}'
+            </#if>
+            <#if active??>
+                and active='${active}'
+            </#if>
+            <#if version??>
+                and version='${version}'
+            </#if>
+            <#if is_deleted??>
+                and is_deleted='${is_deleted}'
+            </#if>
+            <#if interfaceParam??>
+                and interface_param='${interfaceParam}'
+            </#if>
+
+        ]]>
+    </sql>
+
+</sqlMap>

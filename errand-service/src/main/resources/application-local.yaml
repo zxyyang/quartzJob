@@ -1,0 +1,47 @@
+server:
+  port: 9132
+jdbc:
+  driver: com.mysql.cj.jdbc.Driver
+  url:
+  username:
+  password:
+  validationQuery:
+spring:
+  datasource:
+    driver-class-name:
+    url:
+    username:
+    password:
+dubbo:
+  application.name: errand-service
+  registry.address: zookeeper://
+  protocol.name: dubbo
+  protocol.port: 20914
+  scan.base-packages:
+  provider:
+    filter: dubboTraceIdFilter
+    payload: 83886080
+
+  consumer:
+    filter: dubboTraceIdFilter
+    timeout: 60000
+    check: false
+    default: false
+
+management:
+  health:
+    elasticsearch:
+      enabled:
+        false
+    redis:
+      enabled:
+        false
+    db:
+      enabled:
+        false
+    rabbit:
+      enabled: false
+  endpoint:
+    web:
+      exposure:
+        include: health

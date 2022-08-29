@@ -1,0 +1,9 @@
+app:
+  id: errand-service
+apollo:
+  meta: http://
+  cacheDir: /data/apollo/
+  bootstrap:
+    enabled: true
+    namespaces:
+  autoUpdateInjectedSpringProperties: false

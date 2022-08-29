@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EclipseCodeFormatterProjectSettings">
+    <option name="projectSpecificProfile">
+      <ProjectSpecificProfile>
+        <option name="formatter" value="ECLIPSE" />
+        <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../工具/标准化/example.importorder" />
+        <option name="importOrderFromFile" value="true" />
+        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../工具/标准化/HirainCodeFormatter_Java_V2.0.xml" />
+        <option name="selectedJavaProfile" value="HirainCodeFormatter_Java" />
+      </ProjectSpecificProfile>
+    </option>
+    <option name="selectedGlobalProfile">
+      <Settings>
+        <option name="formatter" value="ECLIPSE" />
+        <option name="id" value="1636615475591" />
+        <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../工具/标准化/example.importorder" />
+        <option name="importOrderFromFile" value="true" />
+        <option name="name" value="new" />
+        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../工具/标准化/HirainCodeFormatter_Java_V2.0.xml" />
+        <option name="selectedJavaProfile" value="HirainCodeFormatter_Java" />
+      </Settings>
+    </option>
+  </component>
+</project>
